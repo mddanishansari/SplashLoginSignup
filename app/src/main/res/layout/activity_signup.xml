@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolbarStyle">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingStart="@dimen/ic_nav_padding_start"
+                android:src="@drawable/ic_back" />
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_margin="@dimen/container_layout_margin">
+
+            <TextView
+                android:id="@+id/signup_title"
+                style="@style/LabelStyle"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/signup_title"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/signup_welcome_msg"
+                style="@style/LabelStyle"
+                android:layout_below="@id/signup_title"
+                android:layout_marginTop="16dp"
+                android:text="@string/signup_welcome_txt" />
+
+            <EditText
+                android:id="@+id/et_full_name"
+                style="@style/EditTextStyle"
+                android:layout_below="@id/signup_welcome_msg"
+                android:layout_marginTop="16dp"
+                android:hint="@string/full_name_hint"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_email_address"
+                style="@style/EditTextStyle"
+                android:layout_below="@id/et_full_name"
+                android:layout_marginTop="16dp"
+                android:hint="@string/email_address_hint"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/EditTextStyle"
+                android:layout_below="@id/et_email_address"
+                android:layout_marginTop="16dp"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btn_signup"
+                style="@style/SolidButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@id/et_password"
+                android:layout_marginTop="20dp"
+                android:text="@string/signup_btn_label" />
+
+            <RelativeLayout
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_signup"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/divider_or"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:id="@+id/divider_or"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/divider_or"
+
+                    android:textColor="@color/divider_or"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/divider_or"
+                    android:background="@color/divider" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_signup_fb"
+                style="@style/SolidButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@id/divider"
+                android:backgroundTint="@color/fb_blue"
+                android:text="@string/signup_fb_btn_label"
+                android:textSize="16sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/login_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/have_account"
+                    style="@style/LabelStyle"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:text="@string/have_account"
+                    android:textColor="@color/account"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/login"
+                    style="@style/LabelStyle"
+                    android:layout_toEndOf="@id/have_account"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:onClick="login"
+                    android:text="@string/login_label"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

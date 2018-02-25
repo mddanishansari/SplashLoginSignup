@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="container_layout_margin">36dp</dimen>
+    <dimen name="btn_corners">6dp</dimen>
+    <dimen name="splash_btn_width">130dp</dimen>
+    <dimen name="divider_height">2dp</dimen>
+    <dimen name="ic_nav_padding_start">16dp</dimen>
+    <dimen name="layout_in_between_margins">16dp</dimen>
+    <dimen name="divider_start_and_end_margins">8dp</dimen>
+    <dimen name="divider_top_and_bottom_margins">8dp</dimen>
+</resources>
