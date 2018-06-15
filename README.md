@@ -1,6 +1,6 @@
 # SplashLoginSignup
 
-## This repository contains source code for the follwing YouTube video (click on image)
+### This repository contains source code for the follwing YouTube video (click on image to watch the video)
 [![alt text](screen/youtube-thumbnail.png)](https://www.youtube.com/watch?v=GHAPquCKmK0)
 
 ## Inspired by
